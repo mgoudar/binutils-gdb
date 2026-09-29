@@ -3755,6 +3755,8 @@ const struct riscv_opcode riscv_opcodes[] =
 {"mips.mcache", 0, INSN_CLASS_XMIPSCBOM, "<,(s)", MATCH_MIPS_MCACHE, MASK_MIPS_MCACHE, match_opcode, 0 },
 {"mips.mdiagr", 0, INSN_CLASS_XMIPSMDIAG, "s", MATCH_MIPS_MDIAGR, MASK_MIPS_MDIAGR, match_opcode, 0 },
 {"mips.mdiagw", 0, INSN_CLASS_XMIPSMDIAG, "s", MATCH_MIPS_MDIAGW, MASK_MIPS_MDIAGW, match_opcode, 0 },
+{"mips.mtlbwr", 0, INSN_CLASS_XMIPSSTW, "s", MATCH_MIPS_MTLBWR, MASK_MIPS_MTLBWR, match_opcode, 0 },
+{"mips.mtlbwr.hg", 0, INSN_CLASS_XMIPSSTW, "s,Xm3", MATCH_MIPS_MTLBWR_HG, MASK_MIPS_MTLBWR_HG, match_opcode, 0 },
 /* MIPS trig instructions.  */
 {"mips.fsinhz.s",   0, INSN_CLASS_XMIPSTRIG, "D,S",    MATCH_MIPS_FSINHZ_S, MASK_MIPS_FSINHZ_S, match_opcode, 0 },
 {"mips.fcoshz.s",   0, INSN_CLASS_XMIPSTRIG, "D,S",    MATCH_MIPS_FCOSHZ_S, MASK_MIPS_FCOSHZ_S, match_opcode, 0 },

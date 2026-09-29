@@ -56,3 +56,10 @@
   mips.mdiagr t1
   mips.mdiagw t1
   .option pop
+
+  # xmipsstw
+  .option push
+  .option arch, +xmipsstw
+  mips.mtlbwr t1
+  mips.mtlbwr.hg t1, 5
+  .option pop

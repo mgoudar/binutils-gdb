@@ -37,3 +37,6 @@ Disassembly of section .text:
 
 [ 	]+[0-9a-f]+:[ 	]+ec0306f3[ 	]+mips.mdiagr[ 	]+t1
 [ 	]+[0-9a-f]+:[ 	]+ec1306f3[ 	]+mips.mdiagw[ 	]+t1
+
+[ 	]+[0-9a-f]+:[ 	]+ec030073[ 	]+mips.mtlbwr[ 	]+t1
+[ 	]+[0-9a-f]+:[ 	]+ecd30073[ 	]+mips.mtlbwr.hg[ 	]+t1,5
