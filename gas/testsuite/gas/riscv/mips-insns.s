@@ -63,3 +63,9 @@
   mips.mtlbwr t1
   mips.mtlbwr.hg t1, 5
   .option pop
+
+  # xmipscorextend
+  .option push
+  .option arch, +xmipscorextend
+  mips.corextend t0, t1, t2, 5
+  .option pop

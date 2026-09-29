@@ -143,6 +143,8 @@ static inline unsigned int riscv_insn_length (insn_t insn)
   ((RV_X(x, 25, 2) << 5) | (RV_X(x, 10, 2) << 3))
 #define EXTRACT_MIPS_MTLBWR_HG_IMM(x) \
   (RV_X(x, 20, 3) << 0)
+#define EXTRACT_MIPS_COREXTEND_IMM(x) \
+  (RV_X(x, 25, 4) << 0)
 
 #define ENCODE_ITYPE_IMM(x) \
   (RV_X(x, 0, 12) << 20)
@@ -222,6 +224,8 @@ static inline unsigned int riscv_insn_length (insn_t insn)
   ((RV_X(x, 5, 2) << 25) | (RV_X(x, 3, 2) << 10))
 #define ENCODE_MIPS_MTLBWR_HG_IMM(x) \
   (RV_X(x, 0, 3) << 20)
+#define ENCODE_MIPS_COREXTEND_IMM(x) \
+  (RV_X(x, 0, 4) << 25)
 
 #define VALID_ITYPE_IMM(x) (EXTRACT_ITYPE_IMM(ENCODE_ITYPE_IMM(x)) == (x))
 #define VALID_STYPE_IMM(x) (EXTRACT_STYPE_IMM(ENCODE_STYPE_IMM(x)) == (x))
@@ -424,6 +428,8 @@ static inline unsigned int riscv_insn_length (insn_t insn)
 #define OP_SH_MIPS_SDP_OFFSET25     25
 #define OP_MASK_MIPS_MTLBWR_HG_OFFSET     0x7
 #define OP_SH_MIPS_MTLBWR_HG_OFFSET       20
+#define OP_MASK_MIPS_COREXTEND_OFFSET     0xf
+#define OP_SH_MIPS_COREXTEND_OFFSET       25
 
 /* ABI names for selected x-registers.  */
 
@@ -616,6 +622,7 @@ enum riscv_insn_class
   INSN_CLASS_XMIPSCBOM,
   INSN_CLASS_XMIPSMDIAG,
   INSN_CLASS_XMIPSSTW,
+  INSN_CLASS_XMIPSCOREXTEND,
   INSN_CLASS_XARCVUDSP,
   INSN_CLASS_XARCVBITREV,
   INSN_CLASS_XARCVBITSTREAM,

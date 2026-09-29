@@ -40,3 +40,5 @@ Disassembly of section .text:
 
 [ 	]+[0-9a-f]+:[ 	]+ec030073[ 	]+mips.mtlbwr[ 	]+t1
 [ 	]+[0-9a-f]+:[ 	]+ecd30073[ 	]+mips.mtlbwr.hg[ 	]+t1,5
+
+[ 	]+[0-9a-f]+:[ 	]+8a73028b[ 	]+mips.corextend[ 	]+t0,t1,t2,5
