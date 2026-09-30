@@ -42,3 +42,9 @@ Disassembly of section .text:
 [ 	]+[0-9a-f]+:[ 	]+ecd30073[ 	]+mips.mtlbwr.hg[ 	]+t1,5
 
 [ 	]+[0-9a-f]+:[ 	]+8a73028b[ 	]+mips.corextend[ 	]+t0,t1,t2,5
+
+[ 	]+[0-9a-f]+:[ 	]+edf00ef3[ 	]+mips.mginv.fence
+[ 	]+[0-9a-f]+:[ 	]+ec628c73[ 	]+mips.mginv.gvma[ 	]+t0,t1
+[ 	]+[0-9a-f]+:[ 	]+ec028ef3[ 	]+mips.mginv.i[ 	]+t0
+[ 	]+[0-9a-f]+:[ 	]+ec628873[ 	]+mips.mginv.vma[ 	]+t0,t1
+[ 	]+[0-9a-f]+:[ 	]+ec628a73[ 	]+mips.mginv.vvma[ 	]+t0,t1

@@ -3758,6 +3758,11 @@ const struct riscv_opcode riscv_opcodes[] =
 {"mips.mtlbwr", 0, INSN_CLASS_XMIPSSTW, "s", MATCH_MIPS_MTLBWR, MASK_MIPS_MTLBWR, match_opcode, 0 },
 {"mips.mtlbwr.hg", 0, INSN_CLASS_XMIPSSTW, "s,Xm3", MATCH_MIPS_MTLBWR_HG, MASK_MIPS_MTLBWR_HG, match_opcode, 0 },
 {"mips.corextend", 0, INSN_CLASS_XMIPSCOREXTEND, "d,s,t,Xm4", MATCH_MIPS_COREXTEND, MASK_MIPS_COREXTEND, match_opcode, 0 },
+{"mips.mginv.fence", 0, INSN_CLASS_XMIPSMGINV, "", MATCH_MIPS_MGINV_FENCE, MASK_MIPS_MGINV_FENCE, match_opcode, 0 },
+{"mips.mginv.gvma", 0, INSN_CLASS_XMIPSMGINV, "s,t", MATCH_MIPS_MGINV_GVMA, MASK_MIPS_MGINV_GVMA, match_opcode, 0 },
+{"mips.mginv.i", 0, INSN_CLASS_XMIPSMGINV, "s", MATCH_MIPS_MGINV_I, MASK_MIPS_MGINV_I, match_opcode, 0 },
+{"mips.mginv.vma", 0, INSN_CLASS_XMIPSMGINV, "s,t", MATCH_MIPS_MGINV_VMA, MASK_MIPS_MGINV_VMA, match_opcode, 0 },
+{"mips.mginv.vvma", 0, INSN_CLASS_XMIPSMGINV, "s,t", MATCH_MIPS_MGINV_VVMA, MASK_MIPS_MGINV_VVMA, match_opcode, 0 },
 /* MIPS trig instructions.  */
 {"mips.fsinhz.s",   0, INSN_CLASS_XMIPSTRIG, "D,S",    MATCH_MIPS_FSINHZ_S, MASK_MIPS_FSINHZ_S, match_opcode, 0 },
 {"mips.fcoshz.s",   0, INSN_CLASS_XMIPSTRIG, "D,S",    MATCH_MIPS_FCOSHZ_S, MASK_MIPS_FCOSHZ_S, match_opcode, 0 },
